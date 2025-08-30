@@ -1,0 +1,259 @@
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      
+      *,html,body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background-color: #f4f4f4;
+      }
+
+      section {
+        min-height: 100vh;
+      }
+
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+
+
+      /* Wrapper */
+.navwrapper {
+  display: flex;
+  justify-content: space-between; /* Logo kiri, menu kanan */
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #fff; /* Bisa ganti sesuai tema */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Logo */
+.logo {
+  height: 150px;
+  width: 150px;
+}
+
+/* Navigation */
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 25px; /* Jarak antar menu */
+  margin: 0;
+  padding: 0;
+}
+
+/* Link */
+.navlink {
+  text-decoration: none;
+  font-size: 16px;
+  color: #007BFF; /* biru enak di mata */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navlink:hover {
+  color: #0056b3; /* efek hover */
+}
+
+
+      /* Section Colors */
+      .red {
+        background-color: #2c3e50;
+      }
+
+      .blue {
+        background-color: #e67e22;
+      }
+
+      .black {
+        background-color: #e74c3c;
+      }
+
+      .yellow {
+        background-color: #3498db;
+      }
+
+      .green {
+        background-color: #27ae60;
+      }
+
+      /* Content Wrapper */
+      .contentwrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        padding: 20px;
+        text-align: center;
+      }
+
+      /* Home Section */
+      .home-content {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 100px 20px 20px;
+        color: white;
+      }
+
+      .home-content h1 {
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+      }
+
+      .home-content h2 {
+        font-size: 1.5em;
+        max-width: 800px;
+        line-height: 1.6;
+        font-weight: 400;
+        opacity: 0.9;
+      }
+
+      /* Section Headings */
+      h1 {
+        font-size: 3em;
+        color: white;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 2.5em;
+        color: white;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-size: 1.3em;
+        color: white;
+        line-height: 1.6;
+        max-width: 800px;
+        text-align: center;
+      }
+
+      /* About Section Specific */
+      #about .contentwrapper {
+        padding: 100px 20px 20px;
+      }
+
+      #about h2 {
+        color: #ecf0f1;
+      }
+
+      #about p {
+        color: #bdc3c7;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .home-content h1 {
+          font-size: 2.5em;
+        }
+        
+        .home-content h2 {
+          font-size: 1.2em;
+        }
+        
+        .navigation {
+          justify-content: center;
+          flex-wrap: wrap;
+          padding: 0 10px;
+        }
+        
+        .nav {
+          padding: 10px 15px;
+          margin: 2px;
+        }
+        
+        .navlink {
+          font-size: 1em;
+        }
+
+        /* footer */
+footer {
+  background: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer a {
+  color: #facc15;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .pricing-table {
+    flex-direction: column;
+    align-items: center;
+  }
+
+        
+      }
+
+      /* Footer */
+      .footer {
+        background-color: #2c3e50;
+        color: white;
+        padding: 40px 0 20px;
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .footer h3 {
+        color: #3498db;
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        font-weight: 600;
+      }
+
+      .footer p {
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 1em;
+        line-height: 1.6;
+        margin-bottom: 25px;
+      }
+
+      .social-links {
+        margin: 30px 0;
+      }
+
+      .social-links a {
+        color: rgba(255, 255, 255, 0.8);
+        text-decoration: none;
+        margin: 0 15px;
+        font-size: 1.1em;
+        transition: color 0.3s ease;
+      }
+    }
+    
